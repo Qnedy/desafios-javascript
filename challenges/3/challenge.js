@@ -17,6 +17,18 @@
  * a > b sempre.
  */
 
-const MDC = (a, b) => {}
+const MDC = (a, b) => {
+    let maxNumber = Math.max(a, b);
+    let minNumber = Math.min(a, b);
+    let remainder = -1;
+
+    while(remainder != 0){
+        remainder = maxNumber % minNumber;
+        maxNumber = minNumber;
+        minNumber = remainder;
+    }
+    mdcFinal = maxNumber;
+    return mdcFinal;
+}
 
 module.exports = MDC
