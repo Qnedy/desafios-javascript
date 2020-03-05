@@ -10,5 +10,5 @@ Quando eu li o enunciado desse primeiro desafio, eu já pensei em utilizar o red
 **challenge 2:**
 Nesse segundo desafio eu fui pelo mais simples que imaginei. While padrão com contador e um if "ternário" - pra ficar menos verboso - e passou nos testes certinho.
 
-**challenge 2:**
+**challenge 3:**
 Nesse desafio tive que escolher usar ou não recursividade. Optei por usar um while mesmo e não fazer uma chamada recursiva, pois, imagino que dependendo dos dois números (se forem muito grande) fornecidos para a função MDC(), o nível de profundidade da recursão pode ser um problema.
