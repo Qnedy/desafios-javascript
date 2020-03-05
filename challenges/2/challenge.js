@@ -16,8 +16,16 @@
  *
  */
 
-const isPrime = require('../../utils/isPrime')
+const isPrime = require('../../utils/isPrime');
+let sum = 0;
+let cont = 1;
 
-const sumPrimes = n => {}
+const sumPrimes = n => {
+    while(cont <= n){
+        isPrime(cont) ? sum += cont : null;
+        cont++;
+    }
+    return sum;
+}
 
-module.exports = sumPrimes
+module.exports = sumPrimes;
