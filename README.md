@@ -18,3 +18,5 @@ O mais difícil até agora, como era de se esperar :). Até aqui não usar reduc
 **challenge 5:**
 Foi bem tranquilo resolver esse desafio. Eu já tenho experiência em utilizar async e await em chamadas de api. Também da chamada de componentes de acordo com algum status da chamada.
 
+**challenge 6:**
+Gosto de ficar testando regex e fazer essa aqui foi bem legal pois aprendi algo novo sobre elas que foi a forma de pegar os grupos da regex com [index]. Como fazemos em arrays.

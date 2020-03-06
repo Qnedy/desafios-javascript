@@ -26,6 +26,20 @@
  * }
  */
 
-const extractSize = htmlTemplate => {}
+const extractSize = htmlTemplate => {
+    const widthRegex = /width: ([0-9]*)/;
+    const heightRegex = /height: ([0-9]*)/;
+
+    let widthValue, heightValue;
+
+
+    if(htmlTemplate === ``){
+        return {width: 0, height: 0};
+    }else if((widthValue = widthRegex.exec(htmlTemplate)[1]) !== null && (heightValue = heightRegex.exec(htmlTemplate)[1]) !== null) {
+        return {width: parseInt(widthValue), height: parseInt(heightValue)};
+    }else{
+        return {width: 0, height: 0};
+    };
+}
 
 module.exports = extractSize
