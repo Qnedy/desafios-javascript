@@ -29,9 +29,19 @@
  *
  */
 
-const { setData, setError, setLoading } = require('../../utils/stateHandlers')
-const api = require('../../utils/api') // Promise
+const { setData, setError, setLoading } = require('../../utils/stateHandlers');
+const api = require('../../utils/api'); // Promise
 
-const doRequest = () => {}
+const doRequest = async () => {
+    setLoading(true);
+    await api().then(response => {
+        setError(false);
+        setData(response);
+        setLoading(false);
+    }).catch(() => {
+        setError(true);
+        setLoading(false);
+    });
+};
 
-module.exports = doRequest
+module.exports = doRequest;
