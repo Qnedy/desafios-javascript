@@ -14,4 +14,3 @@ Nesse desafio tive que escolher usar ou não recursividade. Optei por usar um wh
 
 **challenge 4:**
 O mais difícil até agora, como era de se esperar :). Até aqui não usar reduce em objetos, só tinha utilizado ele em array de números. Pesquisei bastante e consegui transformar o array de objetos da propriedade "reports - input" um objeto com objetos dentro. No final consegui aprender mais do reduce. Foi muito bom.
-
